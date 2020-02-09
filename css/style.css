@@ -7,7 +7,6 @@ a{
 }
 main{
 	display: grid;
-	align-content: center;
 	justify-content: center;
 }
 .photo img{
