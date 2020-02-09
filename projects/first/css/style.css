@@ -1,11 +1,19 @@
 /*fonts*/
 @import url('fonts/fonts.css');
+
 *{
 	font-family: 'Open Sans', sans-serif;
 }
 .container{
 	max-width: 1170px; 
 }
+/*title*/
+.titles h3{
+	font:normal 700 30px 'Oswald', sans-serif;
+	padding: 26px 0 40px;
+	margin-bottom: 0;
+}
+/*top line*/
 .contact-info{
 	margin: 10px 0 10px 23px;
 	padding: 0 15px;
@@ -28,18 +36,16 @@
 	line-height: 24px;
 	font-size: 13px;
 }
-
+/*navigation*/
 .nav-link{
 	white-space: nowrap;
 	font-size: 14px;
 }
-
 .intro{
 	padding: 0;
 	background: url(../img/intro.jpg) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	
 }
 .intro .navbar{
 	background: rgba(0,49,113,.49);
@@ -61,7 +67,7 @@
 	padding-left: 0 !important;
 	transition: all .5s;
 }
-
+/*intro*/
 .slogan h1{
 	color: #ecf0f1;
 	font: normal 800 60px 'Poppins', sans-serif;
@@ -96,12 +102,7 @@
 	padding-right: 40px;
 	margin-top: 60px;
 }
-.titles h3{
-	font:normal 700 30px 'Oswald', sans-serif;
-	padding: 26px 0 40px;
-	margin-bottom: 0;
-}
-
+/*features*/
 .features_content .grid_container{
 	display: grid;
 	grid-template-columns: minmax(auto, 301px) minmax(auto, auto) minmax(auto,301px);
@@ -156,6 +157,7 @@
 	color: #91a5a3;
 	font-family: 'Roboto', sans-serif;;
 }
+/*fuuture*/
 .future{
 	background: url(../img/bg_future.jpg);
 	background-size: cover;
@@ -193,7 +195,7 @@
 	max-width: 300px;
 }
 
-
+/*galery / screenshots*/
 .galery.container{
 	margin-bottom: 100px;
 }
@@ -215,50 +217,12 @@
 	opacity: .8;
 }
 /*.galery .right_grid{}*/
+
+/*video*/
 .video{
 	background: #eee;
 }
-
-
-
-
-
-
-
-.statistic{
-	background: url(../img/bg_future.jpg);
-	background-size: cover;
-}
-.statistic .grid{
-	margin: 0 auto;
-	display: grid;
-	justify-content: space-between;
-	align-items: center;
-	grid-template-columns: repeat(3, auto 1px) auto;
-	grid-gap: minmax(20px,60px);
-	max-width: 940px;
-	width: 100%;
-}
-.statistic .grid .stick{
-	background: #fff;
-	height: 130px;
-	margin: 35px 0;
-}
-.statistic .grid .stat{
-	display: grid;
-	grid-template-rows: 100px 30px;
-	align-items: center;
-	color: #fff;
-	font: normal 18px 'Poppins', sans-serif;
-}
-.statistic .grid .stat h3{
-	font: normal 72px 'Lato', sans-serif;;
-}
-
-
-
-
-
+/*"first ever app" block / services*/
 
 .first_ever_app .grid{
 	margin: 0 auto;
@@ -294,14 +258,108 @@
 	margin: 0 auto;
 	margin-top: 2px;
 }
+/*statistic*/
+.statistic{
+	background: url(../img/bg_future.jpg);
+	background-size: cover;
+}
+.statistic .grid{
+	margin: 0 auto;
+	display: grid;
+	justify-content: space-between;
+	align-items: center;
+	grid-template-columns: repeat(3, auto 1px) auto;
+	grid-gap: minmax(20px,60px);
+	max-width: 940px;
+	width: 100%;
+}
+.statistic .grid .stick{
+	background: #fff;
+	height: 130px;
+	margin: 35px 0;
+}
+.statistic .grid .stat{
+	display: grid;
+	grid-template-rows: 100px 30px;
+	align-items: center;
+	color: #fff;
+	font: normal 18px 'Poppins', sans-serif;
+}
+.statistic .grid .stat h3{
+	font: normal 72px 'Lato', sans-serif;;
+}
+/*testimonials*/
+.testimonials{
+	background: #eee;
+	padding: 0px;
+}
+.testimonials .carousel-indicators li{
+	width: 18px;
+	height: 18px;
+	border-radius: 50px;
+	border: 2px solid #293d85; 
+	background: none;
+	opacity: 1;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+}
+.testimonials .carousel-indicators .active{
+	background: #293d85;
+	outline: 1;
+}
+.testimonials .carousel .carousel-item .grid{
+	background: url(../img/bg_testimonials.png) center no-repeat;
+	max-width: 865px;
+	width: 100%;
+	height: 290px;
+	margin: 0 auto 100px;
+	display: grid;
+	grid-template-columns: 220px minmax(auto, 532px);
+	grid-gap: 5px;
+}
+.testimonials .carousel .carousel-item .photo{
+	justify-self:end;
+	align-self: center;
+}
+.testimonials .carousel .carousel-item .testimonial{
+	display: grid;
+	grid-template-rows: 81px auto auto 50px;
+}
+.testimonials .testimonial i{
+	font-size: 60px;
+	color: #1d61c0;
+	align-self: end;
+	margin-bottom: 0;
+}
+.testimonials .testimonial .response{
+	font: normal 14px "Roboto", sans-serif;
+	color: #fff;
+	justify-content: center;
+	text-align: center;
+	margin:18px 15px 40px 37px ;
+}
+.testimonials .testimonial h5{
+	font: normal 700 14px "Roboto", sans-serif;
+	text-align: center;
+	color: #fff;
+}
+.testimonials .testimonial h5:after{
+	content: '';
+	display: block;
+	background: #fff;
+	width: 72px;
+	height: 1px;
+	margin: 0 auto;
+}
+.testimonials .testimonial .status{
+	font: italic 14px "Roboto", sans-serif;
+	text-align: center;
+	color: #fff;
+}
 
 
 
-
-
-
-
-
+/*our team*/
 .who_we_are .team{
 	margin: 0 auto;
 	max-width: 1015px;
@@ -330,14 +388,11 @@
 	margin: 0 auto;
 	margin-top: 2px;
 }
-
 .who_we_are .person p{
 	font-size: 14px;
 	color: #6c8784;
 	margin-bottom: 22px;
-
 }
-
 .who_we_are .person a{
 	width: 32px;
 	height: 32px;
@@ -346,14 +401,7 @@
 	line-height: 32px;
 	font-size: 16px;
 }
-
-
-
-
-.testimonials{
-	background: #eee;
-}
-
+/*partners*/
 .our_partners{
 	background: #eee;
 }
@@ -372,6 +420,7 @@
 	margin-right: 15px;
 	margin-left: 15px;
 }
+/*price*/
 .pricing .grid{
 	margin: 0 auto;
 	max-width: 940px;
@@ -466,7 +515,6 @@
 	-moz-clip-path: polygon(0% 0%, 0% calc(100% - 95px),50% 100%, 100% calc(100% - 95px), 100% 0%);
 	-webkit-clip-path: polygon(0% 0%, 0% calc(100% - 95px),50% 100%, 100% calc(100% - 95px), 100% 0%);
 }
-
 .pricing .grid .block a{
 	background: #26679e;
 	width: 120px;
@@ -480,14 +528,7 @@
 .pricing .grid .block a:hover{
 	background: #1c517e;
 }
-
-
-
-
-
-
-
-
+/*footer block*/
 .footer_nav{
 	background: #0f62a8;
 	color: #fff;
@@ -570,8 +611,9 @@
 	padding-left: 15px;
 }
 
-
+/*media queries*/
 @media screen and (max-width:992px){
+	/*intro*/
 	.downlond-app{
 		margin-bottom: 0;
 		justify-content: center;
@@ -582,6 +624,7 @@
 		right: 0;
 		margin: 0 0;
 	}
+	/*features*/
 	.features_content .grid_container{
 		grid-template-columns: 1fr 1fr;
 	}
@@ -591,9 +634,11 @@
 		grid-row: 1 / 6;
 		grid-column: 2 / 3;
 	}
+	/*future*/
 	.future .grid{
 		grid-template-rows: auto; 
 	}
+	/*footer block*/
 	.footer_nav .grid{
 		grid-template-columns: repeat(2, auto);
 		justify-content: center;
@@ -603,6 +648,7 @@
 		padding:: 50px 0;
 		margin: 0;
 	}
+	/*price*/
 	.pricing .grid{
 		justify-content: center;
 		grid-template-columns: 301px;
@@ -610,6 +656,7 @@
 
 }
 @media screen and (max-width:767px){
+	/*future*/
 	.future .grid_container img{
 		margin-bottom: 30px;
 		justify-self: center;
@@ -620,16 +667,19 @@
 		display: grid;
 		grid-template-columns: auto;
 	}
+	/*galery / screenshots*/
 	.galery .content{
 		grid-template-columns:  296fr 435fr;
 	}
 	.galery .right_grid{
 		grid-column: 1 / -1;
 	}
+	/*statistic*/
 	.statistic .grid{
 		grid-template-columns: auto 1px auto;
 		justify-items:center;
 	}
+	/*services*/
 	.first_ever_app .grid{
 		justify-content: center;
 		grid-template-columns: 220px;
@@ -638,20 +688,35 @@
 	.first_ever_app .grid .box{
 		width: 220px;
 	}
-
+	/*to hide some sticks from statistic block and services block*/
 	.statistic .grid .stick:nth-child(4),
 	.first_ever_app .grid .stick{
 		display: none;
 	}
+	/*testimonials*/
+	.testimonials .carousel .carousel-item .grid{
+		background-size: cover;
+		height: auto;
+		grid-template-columns: minmax(auto, 532px);
+		grid-template-rows: 160px auto;
+		justify-content: center;
+	}
 
-
-
-
-
-
-
-
-
+	.testimonials .carousel .carousel-item .photo{
+		justify-self:center;
+		align-self: end;
+	}
+.testimonials .testimonial i{
+	margin-left: 20px;
+}
+.testimonials .testimonial .response{
+	font: normal 14px "Roboto", sans-serif;
+	color: #fff;
+	justify-content: center;
+	text-align: center;
+	margin:18px 15px 40px 15px ;
+}
+	/*partners*/
 	.our_partners .logos{
 		grid-template-columns: auto auto; 
 		justify-content: center;
@@ -659,23 +724,26 @@
 }
 
 @media screen and (max-width:576px){
+	/*features*/
 	.features_content .grid_container{
 		grid-template-columns: 1fr;
 	}
 	.features_content .grid_container .grid_img{
 		display: none;
 	}
+	/*galery / screenshots*/
 	.galery .content{
 		grid-template-columns:  auto;
 	}
+	/*our team*/
 	.who_we_are .team{
 		grid-template-columns: 1fr;
-
 	}
 	.who_we_are .team .person{
 		display: grid;
 		margin: 0 auto 60px;
 	}
+	/*statistic*/
 	.statistic .grid{
 		grid-template-columns: auto;
 		justify-content: space-around;
@@ -686,20 +754,24 @@
 	.statistic .grid .stat{
 		margin: 20px 0;
 	}
+	/*footer block*/
 	.footer_nav .grid{
 		grid-template-columns: repeat(1, auto);
 	}	
 }
 
 @media screen and (max-width:428px){
+	/*top block*/
 	.contact-info{
 		justify-content: center !important;
 	}
+	/*partners*/
 	.our_partners .logos{
 		grid-template-columns: auto; 
 	}
 }
 @media screen and (max-width:400px){
+	/*intro*/
 	.downlond-app button{
 		margin-bottom: 30px;
 	}
