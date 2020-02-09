@@ -1,4 +1,4 @@
 
 $('.carousel').carousel({
-	interval: NaN
+	interval: 10000
 })
