@@ -1,0 +1,17 @@
+body{
+	background: #000;
+	height: 100vh;
+}
+a{
+	color: #fff;
+}
+main{
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+.photo img{
+	border-radius: 50%;
+	width: 200px;
+}
+
