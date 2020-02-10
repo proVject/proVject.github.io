@@ -54,6 +54,7 @@ main{
 }
 /*navbar*/
 main .navbar{
+	-webkit-position: sticky;
 	position: sticky;
 	top: 0;
 	background: #fffff5;
