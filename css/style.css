@@ -6,7 +6,6 @@ body{
 header{
 	position: relative;
 	background: #222 url(../img/top_bg.jpg) center no-repeat;
-	-webkit-background-attachment: fixed;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
     background-size: cover;
@@ -73,3 +72,10 @@ main .navbar{
 	font:normal 800 24px "Open Sans", sans-serif;
 	height: 200px;
 }
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+		header{
+			background-attachment: scroll;
+			background-size: cover;
+			-webkit-background-size: cover;
+		}
+   }
