@@ -42,12 +42,6 @@ header .greeting h1{
 header .greeting .arrow{
 	margin-top: 40px;
 }
-header .greeting img{
-	margin-bottom: 40px;
-	width: 140px;
-	height: 140px;
-	border-radius: 50%;
-}
 main{
 	background: #f5f5f5;
 }
