@@ -1,8 +1,72 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 body{
 	font: normal 400 16px 'Open Sans', sans-serif;
 }
+/*preloader*/
+#preloader {
+	background: #FFF;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+#status {
+	background: url(../img/preloader.gif) center no-repeat;
+	position: fixed;
+	height: 200px;
+	width: 200px;
+	z-index: 98;
+}
+
+
+/* ---------------------------------------------- /*
+ *Scroll Down
+/* ---------------------------------------------- */
+
+header .greeting .scroll-down {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	z-index: 10;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+/*scroll down*/
+.scroll-down span{
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+	animation: drop 1.2s linear 0s infinite running;
+}
+
+@keyframes drop	{
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
+}
+
+
+
+
+
+
+
+/*header*/
 header{
 	position: relative;
 	background: #222 url(../img/top_bg.jpg) center no-repeat;
@@ -36,14 +100,43 @@ header .greeting p{
 	font: italic 300 20px 'Open Sans', sans-serif;
 }
 header .greeting h1{
+	margin: 15px 0;
 	letter-spacing: 5px;
-	font: 600 55px 'Open Sans', sans-serif;
+	line-height: 1;
+	font: 600 40px 'Open Sans', sans-serif;
 }
-header .greeting .arrow{
-	margin-top: 40px;
-}
+
+
+
 main{
 	background: #f5f5f5;
+}
+main h2{
+	letter-spacing: 5px;
+	line-height: 1;
+	font: 600 26px 'Open Sans', sans-serif;
+	color: #000;
+	text-align: center;
+}
+main h2:after{
+	content: '';
+	display: block;
+	background: #BEBEBE;
+	width: 100px;
+	height: 1px;
+	margin: 30px auto;
+}
+main span{
+	color: #007BFF;
+	font-size: 18px;
+	font-weight: 600;
+}
+main span i{
+	margin-right: 10px;
+}
+main h3{
+	color: #007BFF;
+	font-weight: 600;
 }
 /*navbar*/
 main .navbar{
@@ -60,11 +153,52 @@ main .navbar{
 	font:normal 800 24px "Open Sans", sans-serif;
 	color:#8EE000;
 }
-.works{
-	text-align: center;
+.skills{
+	padding-top: 100px;
 
+}
+.works{
+	padding-top: 100px;
+	text-align: center;
+	background: #fff;
 	font:normal 800 24px "Open Sans", sans-serif;
+}
+
+.contacts{
+	padding-top: 100px;
+	background: #F5F5F5;
+}
+
+.contacts .grid{
+	display: grid;
+	grid-template-columns: 250px 400px;
+	grid-template-rows: 250px auto;
+	justify-content: center;
+	grid-gap: 40px;
+}
+.about p a i{
+	color: #013;
+	font-size: 24px;
+	margin: 0 0 0 5px;
+}
+.contacts img{
+	width: 200px;
 	height: 200px;
+	border-radius: 50%;
+	box-shadow: 5px 5px 10px #888;
+}
+
+@media screen and (max-width: 750px){
+	.contacts .grid{
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: auto;
+		text-align: center;
+		justify-content: center;
+	}
+	.contacts .grid p{
+		text-align: left;
+	}
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2){
 		header{

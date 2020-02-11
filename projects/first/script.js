@@ -7,13 +7,9 @@ $('.list-item').click( function () {
 	// to change title over video 
 	$('.video_title h3').text($('.list-item.active').data('title'));
 });
-// to hide title over video
-
-
 
 // carousel
 $('.carousel').carousel({
 	interval: 11000
 });
-
 
