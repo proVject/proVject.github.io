@@ -2,73 +2,202 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Flat Style Website Template PSD for Free Download - cssauthor.com</title>
+	<title>MyCompany</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="fonts/fonts.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/7c24dcfccb.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<!--markers -->
+	<div class="markers">
+		<a href="../first/index.html" title="попередня сторінка"><i class="fas fa-angle-double-left"></i></a>
+		<a href="../third/index.html" title="начтупна сторінка"><i class="fas fa-angle-double-right"></i></a>
+		<a href="../../index.html" title="повернутися до портфоліо">&times;</a>
+	</div>
+	<!-- content -->
 	<header>
-		<div class="logo">
-			<h2>M</h2>
-			<p>inimal</p>
-		</div>
+		<div class="header_logo" id='home' ><p>mycompany</p></div>
 		<nav>
-			<ul>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
+		<div class="topnav" id="myTopnav">
+			<a href="#home">home</a>
+			<a href="#about">about</a>
+			<a href="#services">services</a>
+			<a href="#portfolio">portfolio</a>
+			<a href="#testimonials">testamonitals</a>
+			<a href="#contact">contacts</a>
+			<a href="#" class="icon" id="menu">&#9776;</a>
+		</div>
+	</nav>
 	</header>
 	<main>
-		<div class="banner">
-			<img src="img/devices.png" alt="devices" class="devices">
-			<div class="banner_container">
-				<img src="img/iphone.png" alt="iphone" class="iphone">
-				<div class="intro">
-					<div class="mark">
-						<img src="img/earth.png" alt="earch">
-						<p>App of <br>the year</p>
+		<div class="main_welcome">
+			<h1>WELCOME on <span class="mycompany">mycompany</span></h1>
+			<p>We are a digital agency with <span class="slogan">years of experience</span> and with <span class="slogan">extraordinary people</span></p>
+		</div>
+
+		<div class="wraper">
+			<div class="main_about" id='about'>
+				<div class="left_about">
+					<img src="img/mac.png" alt="mac">
+				</div>
+				<div class="right_about">
+					<h1><span class="title">Some words</span> about us</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus .</p>
+					<ul>
+						<li>Mission - <span class="stLi">We deliver uniqueness and quality</span></li>
+						<li>Skills - <span class="stLi">Delivering fast and excellent results</span></li>
+						<li>Clients - <span class="stLi">Satisfied clients thanks to our experience</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="main_team" id="our_team">
+			<div class="wraper">
+				<h1>our team</h1>
+				<div class="team_cards">
+					<div class="card">
+						<div class="photo"></div>
+						<h4 class="name">Vlad Ivanov</h4>
+						<p class='position'>Designer</p>
+						<p class="about_position">Do not seek to change what has come before. Seek to create that which has not.</p>
 					</div>
-					<div class="buy_wrap">
-						<h1 class="one">My apps shoecase</h1>
-						<p class="one">Lorem Ipsum is simply dummy text .....</p>
-						<a href="#" class="button">
-							<div class="trolley"><img src="img/trolley.png" alt="trolley"></div>
-							<div class="butt">
-								<p>Buy now</p>
-							</div>
-						</a>
+					<div class="card">
+						<div class="photo"></div>
+						<h4 class="name">Bogdan Makarov</h4>
+						<p class='position'>Manager</p>
+						<p class="about_position">Do not seek to change what has come before. Seek to create that which has not.</p>
+					</div>
+					<div class="card">
+						<div class="photo"></div>
+						<h4 class="name">Pavel Konov</h4>
+						<p class='position'>Copywriter</p>
+						<p class="about_position">Do not seek to change what has come before. Seek to create that which has not.</p>
+					</div>
+					<div class="card">
+						<div class="photo"></div>
+						<h4 class="name">Max Belov</h4>
+						<p class='position'>SEO</p>
+						<p class="about_position">Do not seek to change what has come before. Seek to create that which has not.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="wrap_about">
-			<h1>About minimal</h1>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-			<div class="img"><img src="img/about.png" alt="About minimal"></div>
-		</div>
-		<div class="seccond_banner">
-			<div class="sec_top_wrap">
-				<img class="sec_top_banner" src="img/second_top_banner.png" alt="second top banner">
-			</div>
-			<div class="sec_ban_contain">
-				<img src="img/leptop.png" alt="leptop" class="leptop">
-				<div class="right_side">
-					<h1>My  apps  shoecase</h1>
-					<p>Lorem Ipsum is simply dummy text ....</p>
-					<a href="#"><div class="button"><div class="trolley"><img src="img/trolley.png" alt="trolley"></div><div class="buy_now"><p>Buy now</p></div></div></a>
+		
+		<div class="main_services" id='services'>
+			<div class="wraper">
+				<h1>our services</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.</p>
+				<div class="services_cards">
+					<div class="services_card">
+						<img src="img/pc.png" alt="Web design">
+						<h4>Web design</h4>
+						<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+					</div>
+					<div class="services_card">
+						<img src="img/mobile.png" alt="Mobile apps">
+						<h4>Mobile apps</h4>
+						<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+					</div>
+					<div class="services_card">
+						<img src="img/photo.png" alt="PHOTOGRAPHY">
+						<h4>PHOTOGRAPHY</h4>
+						<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+					</div>
+					<div class="services_card">
+						<img src="img/louder.png" alt="marketing">
+						<h4>marketing</h4>
+						<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="arrow_wrap">
-			<div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+
+		<div class="main_clients">
+			<div class="wraper">
+				<h1>SOME OF <span>OUR CLIENTS</span></h1>
+				<div class="clients">
+					<img src="img/chanal.png" alt="chanal">
+					<img src="img/zara.png" alt="zara">
+					<img src="img/guerlain.png" alt="guerlain">
+					<img src="img/lancome.png" alt="lancome">
+					<img src="img/lacoste.png" alt="lacoste">
+				</div>
+			</div>
+		</div>
+
+		<div class="main_work" id="portfolio">
+			<div class="wraper">
+				<h1><span>take a look at</span> our work</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.</p>
+				<div class="galery">
+					<div class="line1">
+						<img src="img/galery_1.png" alt="">
+						<img src="img/galery_1.png" alt="">
+						<img src="img/galery_1.png" alt="">
+						<img src="img/galery_1.png" alt="">
+					</div>
+					<div class="line2">
+						<img src="img/galery_2.png" alt="">
+						<img src="img/galery_2.png" alt="">
+						<img src="img/galery_2.png" alt="">
+						<img src="img/galery_2.png" alt="">
+					</div>
+					<div class="line3">
+						<img src="img/galery_3.png" alt="">
+						<img src="img/galery_3.png" alt="">
+						<img src="img/galery_3.png" alt="">
+						<img src="img/galery_3.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main_testamonitals" id="testimonials">
+			<div class="wraper">
+				<h1>our clients’ <span>testimonials</span></h1>
+				<p class='coment'>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+				<p>Dean Martin, <span>CEO Acme Inc.</span></p>
+			</div>
+		</div>
+
+		<div class="contact_form" id="contact">
+			<div class="contact_wraper">
+				<h1>contact us</h1>
+				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				<form action="#" name="contact_us" method="POST">
+					<div class="form_inputs">
+						<div class="wrap_inp">
+							<p>Name:<spam class="red">*</spam>
+						</p>
+							<input type="text" name="name">
+						</div>
+						<div class="wrap_inp">
+							<p>Email adress:<spam class="red">*</spam>
+						</p>
+							<input type="text" name="email"></div>
+					</div>
+					<p>Message:<spam class="red">*</spam></p>
+					<textarea name="text"></textarea>
+					<div class="button_block">
+						<input type="submit" value="SEND">
+					</div>
+				</form>
+			</div>
 		</div>
 	</main>
+
 	<footer>
-		<h2>Copyright © 2012 Css Author </h2>
+		<div class="wraper">
+			<a href="#"><img src="img/facebook.png" alt="facebook"></a>
+			<a href="#"><img src="img/twitter.png" alt="twitter"></a>
+			<a href="#"><img src="img/twitter.png" alt="google"></a>
+			<a href="#"><img src="img/linkedin.png" alt="linkedin"></a>
+			<a href="#"><img src="img/dribbble.png" alt="dribbble"></a>
+		</div>
 	</footer>
-	<script src="script.js"></script>
+	
+
+	<script src='script.js'></script>
 </body>
 </html>

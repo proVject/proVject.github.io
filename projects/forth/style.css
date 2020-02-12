@@ -13,6 +13,25 @@ a{
 li{
 	list-style: none;
 }
+.markers{
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	z-index: 999;
+	background: #22222288;
+	transform: translateX(-50%);
+}
+.markers a{
+	font-size: 50px;
+	font-weight: 800;
+	color: #fff;
+	padding: 7px;
+	transition: all .3s;
+}
+.markers a:hover{
+	text-decoration: none;
+	background: deepskyblue;
+}
 
 header{
 	background: url(img/top_bg.png) center no-repeat;
