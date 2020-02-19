@@ -37,7 +37,6 @@ width: 14px;
 	justify-content: center;
 	align-items: center;
 }
-
 #status {
 	background: url(../img/preloader.gif) center no-repeat;
 	position: fixed;
