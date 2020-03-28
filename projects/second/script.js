@@ -6,3 +6,6 @@ menu.onclick = function myFunction (){
 		x.className = 'topnav'
 	}
 }
+
+// або так 
+// menu.onclick = () => {document.getElementById('myTopnav').classList.toggle('responsive')} 
