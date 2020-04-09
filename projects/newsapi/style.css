@@ -1,5 +1,5 @@
 .card .card-image .card-title {
-  background: #000000aa;
+  background: #00000099;
   width: 100%;
 }
 .newsContainer .news-field {
@@ -16,7 +16,7 @@
   z-index: 1;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2){
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
   .select-wrapper input.select-dropdown {
     -webkit-user-select: none;
     -moz-user-select: none;
