@@ -1,0 +1,23 @@
+.card .card-image .card-title {
+  background: #000000aa;
+  width: 100%;
+}
+.newsContainer .news-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: dense;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .newsContainer .news-field {
+    grid-template-columns: 1fr;
+  }
+}
