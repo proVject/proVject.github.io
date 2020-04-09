@@ -24,6 +24,20 @@
   user-select: none;
 }
 
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper select {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  opacity: 0;}
+  
+
 @media screen and (max-width: 600px) {
   .newsContainer .news-field {
     grid-template-columns: 1fr;
