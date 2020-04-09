@@ -16,7 +16,7 @@
   z-index: 1;
 }
 
-input.select-dropdown {
+.select-wrapper input.select-dropdown {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
