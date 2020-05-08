@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper cyan">
+        <div class="container">
+          <a href="#" class="brand-logo">WeatherAPI</a>
+        </div>
+      </div>
+    </nav>
+    <section class="search-container">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="card search-card">
+              <form name='search-form'>
+                <div class="input-field search-feild">
+                  <input type="submit" id='serch-submit' hidden/>
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    id="autocomplete-input"
+                    class="autocomplete"
+                    placeholder="Введіть своє місто"
+                    name='town'
+                  />
+                  <button class="waves-effect waves-light btn submit-btn cyan" type='submit'><i class="material-icons left search-icon">search</i></button>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='showing-weather-section'>
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="row">
+                <div class="col s12 m5 offset-m1">
+                  <h3 class="town-title" >Місто</h3>
+                  <div class="card-image wather-icon">
+                    <img src="img/dark/unknown.png">
+                  </div>
+                  <h5 class="weather-description">-</h5>
+                  <h3 class="showing-degree">-<sup>o</sup><span> C</span></h3>
+                </div>
+                <div class="col s12 m5">
+                  <div class="card-content">
+                    <div class="weather-information">
+                      <div class="date"><b>Дата/час: </b><span>dd/mm hh:mm</span></div>
+                      <div class="sunrise"><b>Схід сонця: </b><span>hh:mm</span></div>
+                      <div class="sunset"><b>Захід сонця: </b><span>hh:mm</span></div>
+                      <div class="wind"><b>Вітер: </b><span>N/A</span></div>
+                      <div class="humidity"><b>Вологість: </b><span>N/A %</span></div>
+                      <div class="pressure"><b>Тиск: </b><span>N m/s:mm s</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

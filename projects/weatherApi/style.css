@@ -1,0 +1,91 @@
+:root {
+  --mainBG: none;
+  --bg: #252a33;
+  --color: #fff;
+}
+
+body {
+  background-image: var(--mainBG);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.card,
+input {
+  background: var(--bg);
+  color: var(--color);
+}
+
+.card.search-card {
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.search-container {
+  margin-top: 10px;
+}
+.input-field.search-feild {
+  display: flex;
+}
+.btn.submit-btn {
+  border-radius: 0 20px 20px 0;
+  height: 54px;
+  margin-left: 10px;
+}
+.material-icons.search-icon {
+  font-size: 26px;
+  margin-right: 0;
+}
+.card-image.wather-icon {
+  display: flex;
+  justify-content: center;
+}
+.card-image.wather-icon img {
+  height: 50%;
+  width: 50%;
+  text-align: center;
+}
+.town-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.weather-description {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+}
+.showing-degree {
+  text-align: center;
+  font-weight: 700;
+  margin: 0 20% 30px 20%;
+  cursor: pointer;
+}
+.showing-degree span {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+.weather-information {
+  font-size: 18px;
+}
+
+.carousel .carousel-item {
+  display: flex;
+  min-height: 100%;
+}
+.carousel .carousel-item div img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .carousel .carousel-slider {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .carousel .carousel-item {
+    flex-wrap: wrap;
+  }
+  .carousel .carousel-item div {
+    width: 50%;
+  }
+}
