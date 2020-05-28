@@ -1,7 +1,2 @@
-**/node_modules/**/*
-**/.git
 **/*.psd
-**/package.json
-**/package-lock.json
-**/gulpfile.js
-examp/**/*
+examp
