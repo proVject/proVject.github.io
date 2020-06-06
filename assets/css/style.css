@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
 
 body{
+	overflow: auto;
 	font: normal 400 16px 'Open Sans', sans-serif;
 }
 *::selection{
@@ -27,7 +28,6 @@ width: 14px;
 .red{
 	color:red;
 }
-
 /*preloader*/
 #preloader {
 	background: #FFF;
@@ -94,7 +94,7 @@ header{
     height: 100vh;
 }
 header .over{
-	background-color: rgba(00, 00, 00, 0.4); */
+	background-color: rgba(00, 00, 00, 0.4);
     background-image: url(../images/pattern.png) repeat;
     height: 100%;
     left: 0;
@@ -373,15 +373,16 @@ footer .social_networks a:hover{
 }
 
 /*mediaQueries*/
-@media screen and ( max-width: 500px){
+@media screen and (max-width:500px){
 	.modal{
-		margin: 0;
 		width: 100vw;
+		margin-right: 0;
+		margin-left: 0;
 	}
 	.modal-container{
-		margin: 0;
-		width: 90vw;
-	}
+		width: 900vw;
+		margin-right: 0;
+		margin-left: 0;	}
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2){
 	header{
