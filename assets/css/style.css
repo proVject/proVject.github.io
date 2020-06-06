@@ -27,6 +27,7 @@ width: 14px;
 .red{
 	color:red;
 }
+
 /*preloader*/
 #preloader {
 	background: #FFF;
@@ -372,6 +373,16 @@ footer .social_networks a:hover{
 }
 
 /*mediaQueries*/
+@media screen and ( max-width: 500px){
+	.modal{
+		margin: 0;
+		width: 100vw;
+	}
+	.modal-container{
+		margin: 0;
+		width: 90vw;
+	}
+}
 @media screen and (-webkit-min-device-pixel-ratio: 2){
 	header{
 		background-attachment: scroll;
