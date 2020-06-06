@@ -1,13 +1,23 @@
 function customHTTP() {
   return {
-    async get(url, cb) {
+    get(url, cb) {
       try {
-        const response = await fetch(url, {mode: "no-cors"});
-        console.log(response)
-        const a = await response.json()
-        // cb(null, response);
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", url);
+        xhr.responseType = "json";
+        xhr.addEventListener("error", () => {
+          cb(`Error status code: ${xhr.status}`, xhr);
+        });
+        xhr.addEventListener("load", () => {
+          if (Math.floor(xhr.status / 100) !== 2) {
+            cb(`Error status code: ${xhr.status}`, xhr);
+            return;
+          }
+          const response = xhr.response;
+          cb(null, response);
+        });
+        xhr.send();
       } catch (error) {
-        console.log(error)
         cb("you have given wrong params", error);
       }
     },
@@ -60,7 +70,7 @@ form.addEventListener("submit", (e) => {
 });
 
 const newsService = (function () {
-  const urlApi = "https://newsapi.org/v2";
+  const urlApi = 'https://news-api-v2.herokuapp.com';
   const apiKey = "c28898627d624dbf9464eb7e06ff50aa";
   return {
     topHeadlines(country = "ua", category = "technology", cb) {
@@ -90,7 +100,7 @@ function loadNews() {
 
 // function on get response from the server
 function onGetResponse(error, news) {
-  // if (news) removeLoader();
+  removeLoader();
   if (error) {
     showAlert(error);
     return;
