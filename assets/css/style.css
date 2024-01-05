@@ -178,11 +178,17 @@ main .navbar{
 /*skills*/
 .skills{
 	padding: 100px 0;
+	background: #fff;
 }
 .skills .icons{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+}
+.icons{
+	margin: auto;
+	max-width: 800px;
+	width: 100%;
 }
 .skills i{
 	border: 2px solid #333;
@@ -235,30 +241,51 @@ main .navbar{
 .skills .svg_container:nth-child(3):hover svg{
 	fill:var(--yellow);
 }
-.skills .svg_container:nth-child(4):hover svg path:nth-child(2){
+.skills .svg_container:nth-child(4):hover svg{
+	fill:#3178C6;
+}
+.skills .svg_container:nth-child(5):hover svg path:nth-child(2){
 	fill:#41B883;
 }
 .skills .svg_container:nth-child(4):hover svg path:nth-child(3){
 	fill: #35495E;
 }
-.skills i:nth-child(5):hover{
+.skills .svg_container:hover .nuxt-icon path:nth-child(1){
+	fill: #01c58e;
+}
+.skills .svg_container:hover .nuxt-icon path:nth-child(2){
+	fill: #108775;
+}
+.skills .svg_container:hover .nuxt-icon path:nth-child(3){
+	fill: #2f495e;
+}
+.skills i:nth-child(7):hover{
 	color: #F04F33;
 }
-.skills i:nth-child(6):hover{
+.skills i:nth-child(8):hover{
 	color: #553C7B
 }
-.skills .svg_container:nth-child(7):hover svg{
+.skills .svg_container:nth-child(9):hover svg{
 	fill: #1c78c0;
 }
-.skills i:nth-child(8):hover{
+.skills i:nth-child(10):hover{
 	color: #CD6799;
+}
+.skills i:nth-child(11):hover{
+	color: #5FA04E;
+}
+.skills i:nth-child(12):hover{
+	color: #00D9FF;
 }
 /*works*/
 .works{
 	padding: 100px 0;
 	text-align: center;
-	background: #fff;
 	font:normal 800 24px "Open Sans", sans-serif;
+}
+.works ul{
+	list-style: none;
+	padding: 0;
 }
 .works .container{
 	display: grid;
@@ -370,6 +397,35 @@ footer .social_networks a{
 }
 footer .social_networks a:hover{
 	opacity: 1;
+}
+.experience{
+	background: #fff;
+	padding: 100px 0;
+}
+.experience ul{
+	list-style: none;
+	padding: 0;
+}
+.experience__item{
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.experience__item-year{
+	font-size: 24px;
+	font-weight: 600;
+}
+.experience__item-position{
+	font-size: 28px;
+	font-weight: 700;
+}
+.experience__item-company{
+	font-size: 22px;
+	font-weight: 500;
+	margin-bottom: 12px;
+}
+.experience__item-description{
+	color: #888;
 }
 
 /*mediaQueries*/
