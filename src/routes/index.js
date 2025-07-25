@@ -1,4 +1,4 @@
-import {createMemoryHistory, createRouter, createWebHistory} from 'vue-router'
+import {createMemoryHistory, createRouter, createWebHashHistory, createWebHistory} from 'vue-router'
 
 import HomeView from '../views/HomeView.vue'
 
@@ -7,7 +7,7 @@ const routes = [
 ]
 
 export default createRouter({
-    history: createWebHistory(),
+    history: createMemoryHistory(),
     routes,
     scrollBehavior(to, from, savedPosition) {
         if (to.hash) {
