@@ -1,4 +1,122 @@
-/* src/assets/style.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+*::selection {
+    color: #000;
+    background-color: var(--color-lime-400);
+}
+
+* {
+    scrollbar-color: var(--color-lime-400) var(--color-background);
+    scrollbar-width: thin;
+    --color-lime-400: #9ae600;
+}
+@layer base {
+    * {
+        @apply border-border;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+html, body, #app {
+    min-height: 100%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    --el-bg-color-overlay: var(--background);
+    --el-text-color-regular: var(--foreground);
+    --el-text-color-disabled: var(--foreground);
+    --el-fill-color-light: red;
+    /*--el-border: none;*/
+    --el-border-color: var(--accent-foreground);
+    --el-border-color-light: transparent;
+    --el-border-color-lighter: var(--border);
+    --el-text-color-primary: var(--foreground);
+    --el-text-color-secondary: var(--foreground);
+    --el-color-success: var(--primary)
+}
+
+:root {
+    --background: hsl(210 17% 98%);
+    --foreground: hsl(240 10% 3.9%);
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(240 10% 3.9%);
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: hsl(240 10% 3.9%);
+    --primary: hsl(81 78% 52%);
+    --primary-foreground: hsl(81 80% 10%);
+    --secondary: hsl(273 70% 47%);
+    --secondary-foreground: hsl(0 0% 98%);
+    --muted: hsl(210 40% 96.1%);
+    --muted-foreground: hsl(215.4 16.3% 46.9%);
+    --accent: hsl(210 40% 96.1%);
+    --accent-foreground: hsl(222.2 47.4% 11.2%);
+    --destructive: hsl(0 84.2% 60.2%);
+    --destructive-foreground: hsl(0 0% 98%);
+    --border: hsl(214.3 31.8% 91.4%);
+    --input: hsl(214.3 31.8% 91.4%);
+    --ring: hsl(81 78% 52%);
+}
+
+.dark {
+    --background: hsl(0 0% 13%);
+    --foreground: hsl(273 91% 85%);
+    --card: hsl(0 0% 15%);
+    --card-foreground: hsl(273 91% 85%);
+    --popover: hsl(0 0% 13%);
+    --popover-foreground: hsl(273 91% 85%);
+    --primary: hsl(81 78% 52%);
+    --primary-foreground: hsl(81 80% 10%);
+    --secondary: hsl(273 70% 47%);
+    --secondary-foreground: hsl(0 0% 98%);
+    --muted: hsl(223 47% 11%);
+    --muted-foreground: hsl(215.4 16.3% 56.9%);
+    --accent: hsl(216 34% 17%);
+    --accent-foreground: hsl(0 0% 98%);
+    --destructive: hsl(0 62.8% 30.6%);
+    --destructive-foreground: hsl(0 0% 98%);
+    --border: hsl(216 34% 17%);
+    --input: hsl(216 34% 17%);
+    --ring: hsl(81 78% 52%);
+}
+
+@theme {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+}
+
+.el-dropdown-menu__item:hover,
+.el-dropdown-menu__item:focus {
+    color: var(--accent-foreground) !important;
+    background: var(--accent) !important;
+}
+.el-dropdown-menu__item.is-disabled{
+    opacity: 0.5 !important;
+}

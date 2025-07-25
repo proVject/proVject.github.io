@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Web Developer",
+    "tagline": "Crafting elegant web apps with Vue.",
+    "viewProjects": "View Projects",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Frontend Developer with 5+ years of experience in building modern web applications using Vue/Nuxt, GraphQL, and Node.js. Skilled in designing and implementing complex logic on the frontend, working both independently and in teams. Focused on performance, clean architecture, and user experience. Open to remote opportunities and passionate about continuous learning and growth."
+  },
+  "experience": {
+    "title": "Work Experience",
+    "description": "My professional journey.",
+    "freelance": {
+      "role": "Web Developer",
+      "company": "Freelance",
+      "period": "April 2025 - present",
+      "description": "Built landing pages, mini-CRMs, and lightweight admin panels. Full cycle from requirements to deployment (Nuxt + Node + GraphQL). Communicated directly with clients and delivered polished UI/UX."
+    },
+    "secureon": {
+      "role": "Frontend Developer",
+      "company": "Secureon",
+      "period": "April 2024 - April 2025",
+      "description": "Worked as part of a team building a custom CRM for an internet provider. Used Vue 3, Pinia, Ant Design Vue, Axios. Implemented key features, integrated APIs, and contributed to component architecture."
+    },
+    "productCompany": {
+      "role": "Web Developer",
+      "company": "Product Company",
+      "period": "June 2020 - April 2024",
+      "description": "Independently developed and maintained several web apps using Vue + Nuxt + Node.js + Hasura. Implemented GraphQL integration, user authentication, internationalization, and PWA features. Focused on app optimization and clean, maintainable code."
+    }
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": "A showcase of the technologies and tools I am proficient with."
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "A selection of my personal projects.",
+    "liveDemo": "Live Demo",
+    "taskwave": {
+      "title": "TaskWave",
+      "description": "TaskWave is a simple and elegant Kanban-style task management app built with Vue 3 and Tailwind CSS. Designed as a modern PWA, it supports offline usage, drag-and-drop, modal editing, search, theming, and local storage persistence."
+    },
+    "cryptoview": {
+      "title": "CryptoView",
+      "description": "CryptoView is a modern, real-time cryptocurrency tracker built with Nuxt 3. It features live updates from Binance, internationalization, currency selection, dark/light theme, and a mobile-first responsive design."
+    },
+    "mediumclone": {
+      "title": "MediumClone",
+      "description": "A single-page blog application that replicates core Medium.com features. Built using Vue 2, Vuex for state management, Vue Router for navigation, and Axios for API communication. Includes authentication, article creation/editing, and feed management."
+    },
+    "ais": {
+      "title": "AIS Template Manager",
+      "description": "Логін: hello{'@'}aiscreen.io Пароль: Demo!1234\n\nA SPA for managing visual templates: CRUD, authentication, filtering, global state, and autosave drafts with LocalStorage. Built with Vue 3, Pinia, and Element Plus."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Have a project in mind or just want to say hi? My inbox is always open.",
+    "info": {
+      "title": "Contact Information",
+      "location": "Kalush, Ukraine"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "toast": {
+      "title": "Message Sent!",
+      "description": "Thank you for reaching out. I'll get back to you soon."
+    },
+    "downloadCV": "or Download my CV here"
+  },
+  "footer": {
+    "craftedBy": "Crafted by"
+  }
+}
