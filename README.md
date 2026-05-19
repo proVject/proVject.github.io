@@ -1,6 +1,6 @@
 # Hi there! 👋 I'm Volodymyr Melnyk
 
-🎯 Frontend Developer with 4+ years of experience in building web applications using Vue/Nuxt and modern web technologies. I love working on projects where frontend logic meets business needs — whether it's a sleek dashboard or a web-based tool.
+🎯 Frontend Developer with 5+ years of experience in building web applications using Vue/Nuxt and modern web technologies. I love working on projects where frontend logic meets business needs — whether it's a sleek dashboard or a web-based tool.
 
 I enjoy turning complex logic into elegant user interfaces and continuously exploring new technologies and expanding my skill set.
 
@@ -28,7 +28,7 @@ I enjoy turning complex logic into elegant user interfaces and continuously expl
 ---
 
 ## 💼 About Me
-- 💻 4+ years of professional experience (product companies & freelance)
+- 💻 5+ years of professional experience (product companies & freelance)
 - 🌍 Based in Ukraine (Kalush), available for remote work only
 - 💬 English: A2/B1 — comfortable reading and discussing technical topics
 - 🧠 Psychology degree — strong interpersonal and analytical thinking

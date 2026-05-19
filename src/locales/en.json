@@ -19,6 +19,12 @@
   "experience": {
     "title": "Work Experience",
     "description": "My professional journey.",
+    "nexcore": {
+      "role": "Web Developer",
+      "company": "Nexcore / Atoll Holding STD",
+      "period": "February 2026 - present",
+      "description": "Working on the development of the Udrive platform, including the main platform, e-commerce modules, and admin panel. Implementing new features and improving existing functionality using Vue/Nuxt ecosystem. Collaborating closely with backend developers and QA engineers in a team environment. Supporting and extending the internal component library for reusable UI solutions. Contributed to the development of the platform’s media/blog service"
+    },
     "freelance": {
       "role": "Web Developer",
       "company": "Freelance",

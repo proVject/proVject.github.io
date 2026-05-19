@@ -2,6 +2,12 @@
 
 const experiences = [
   {
+    role: "experience.nexcore.role",
+    company: "experience.nexcore.company",
+    period: "experience.nexcore.period",
+    description: "experience.nexcore.description",
+  },
+  {
     role: "experience.freelance.role",
     company: "experience.freelance.company",
     period: "experience.freelance.period",
